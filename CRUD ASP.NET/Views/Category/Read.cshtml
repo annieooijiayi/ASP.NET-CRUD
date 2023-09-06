@@ -1,0 +1,21 @@
+﻿@model Category
+
+<div class="container">
+    <div class="card">
+        <div class="card-header text-end">
+            <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">
+                Back to List
+            </a>
+        </div>
+        <div class="card-body">
+            <p>@Model.Name</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
